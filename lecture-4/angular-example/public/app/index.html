@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="admin">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Angular Example</title>
+	
+	<link rel="stylesheet" href="../libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body ng-controller="adminController">
+  
+  <div class="container">
+  	
+  	<h1>User administration</h1>
+  	
+  	<p><button class="btn btn-primary">Create user</button></p>
+  	
+    <table class="table table-bordered table-striped">
+    
+       <tr>
+        <th>Username</th>
+        <th>Name</th>
+        
+      </tr>
+
+      <tr ng-repeat="user in users">
+        <td>{{ user.username }}</td>
+        <td>{{ user.name }}</td>
+        
+      </tr>
+
+    </table>
+
+  </div>
+  		  		  		
+  <script src="../libs/angular/angular.min.js"></script>
+  <script src="admin/admin.module.js"></script>	
+  <script src="admin/admin.controller.js"></script>
+  <script src="admin/admin.service.js"></script>
+</body>
+</html>
+
+
