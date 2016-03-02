@@ -1,0 +1,24 @@
+{
+  "name": "angular-example",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Niels Henrik Juul Hansen <niha@eaaa.dk>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/eaaa/frameworks2016spring",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "angular-resource": "^1.5.0",
+    "angular-route": "^1.5.0"
+  }
+}
